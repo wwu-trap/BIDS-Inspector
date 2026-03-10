@@ -1,2 +1,3 @@
 nibabel
 pandas
+matplotlib  # optional — required only for dwi_orientation_check.py scatter plots
