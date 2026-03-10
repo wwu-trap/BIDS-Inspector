@@ -141,6 +141,12 @@ Key columns in the TSV:
 | `session_max_deviation_deg` | Worst pairwise inter-session angle for this subject/acq (Check 4) |
 | `session_consistent` | `True/False` for multi-session subjects |
 
+### Example output
+
+The plot below was generated from [ds000221](https://openneuro.org/datasets/ds000221) (20 subjects, 2 sessions each, DWI + resting-state fMRI + fieldmaps). Orientation data was read from NIfTI affines (no `ImageOrientationPatientDICOM` in this anonymised open dataset). All fmap EPI AP/PA pairs are correctly detected as `ok`; tilt outliers reflect the variable sequence planning typical of a public multi-site dataset.
+
+![Example output — ds000221](docs/example_ds000221.png)
+
 ### Python API
 
 ```python
